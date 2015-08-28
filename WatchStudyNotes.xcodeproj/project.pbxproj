@@ -368,6 +368,7 @@
 				TargetAttributes = {
 					023433601B8D588D009307CB = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = SU48UGSAPP;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -665,6 +666,7 @@
 			baseConfigurationReference = 0E7D0B3A3F11608D60CE28AE /* Pods-WatchStudyNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchStudyNotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -677,6 +679,7 @@
 			baseConfigurationReference = 1587B4562FBD003EECC9431A /* Pods-WatchStudyNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchStudyNotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

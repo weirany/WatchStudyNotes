@@ -58,6 +58,7 @@ class HomeViewController: BaseViewController {
         // remove all scheduled notifications
         UIApplication.sharedApplication().scheduledLocalNotifications.removeAll(keepCapacity: true)
         var items = NoteList.sharedInstance.allAvailableItems()
+        if items.count == 0 { return }
         let frequencInMinutes = Util.stringUserDefault(UserDefaultKey.FrequenceInMinutes)!.toInt()!
         for i in 1...Constants.MaxLocalNotifications {
             let randomIndex = Util.randInRange(0, upperExclude: items.count)

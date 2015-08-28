@@ -61,7 +61,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <action selector="frequenceChanged:" destination="qMN-Qb-UPU" eventType="editingChanged" id="wMf-3N-gYh"/>
+                                    <action selector="frequenceChanged:" destination="qMN-Qb-UPU" eventType="editingDidEnd" id="JXV-bu-Kdy"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A63-1L-c3H">
