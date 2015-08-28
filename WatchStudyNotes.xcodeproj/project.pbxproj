@@ -26,6 +26,8 @@
 		027783EE1B8E70A400311AA1 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783ED1B8E70A400311AA1 /* Enum.swift */; };
 		027783F01B8E70BB00311AA1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783EF1B8E70BB00311AA1 /* Config.swift */; };
 		027783F21B8E70E900311AA1 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783F11B8E70E900311AA1 /* Util.swift */; };
+		027783F41B8E755D00311AA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783F31B8E755D00311AA1 /* HomeViewController.swift */; };
+		027783F71B8E7B7C00311AA1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783F61B8E7B7C00311AA1 /* Note.swift */; };
 		02D8E08E1B8E6A26005CB348 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8E08D1B8E6A26005CB348 /* BaseViewController.swift */; };
 		41F11D79B9A04A8D8080D95F /* Pods_WatchStudyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B802AEE0D62C9B19CEFE032 /* Pods_WatchStudyNotes.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -95,6 +97,8 @@
 		027783ED1B8E70A400311AA1 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		027783EF1B8E70BB00311AA1 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		027783F11B8E70E900311AA1 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		027783F31B8E755D00311AA1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		027783F61B8E7B7C00311AA1 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		02D8E08D1B8E6A26005CB348 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0E7D0B3A3F11608D60CE28AE /* Pods-WatchStudyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStudyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchStudyNotes/Pods-WatchStudyNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		1587B4562FBD003EECC9431A /* Pods-WatchStudyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStudyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchStudyNotes/Pods-WatchStudyNotes.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 			children = (
 				027783E51B8E6ACC00311AA1 /* Util */,
 				02D8E08C1B8E69F2005CB348 /* Controllers */,
+				027783F51B8E7B6900311AA1 /* Model */,
 				023433661B8D588D009307CB /* AppDelegate.swift */,
 				0234336D1B8D588D009307CB /* Main.storyboard */,
 				023433701B8D588D009307CB /* Images.xcassets */,
@@ -243,9 +248,18 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		027783F51B8E7B6900311AA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				027783F61B8E7B7C00311AA1 /* Note.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		02D8E08C1B8E69F2005CB348 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				027783F31B8E755D00311AA1 /* HomeViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -354,6 +368,11 @@
 				TargetAttributes = {
 					023433601B8D588D009307CB = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					023433781B8D588D009307CB = {
 						CreatedOnToolsVersion = 6.4;
@@ -484,7 +503,9 @@
 				027783EA1B8E703600311AA1 /* ApiDelegate.swift in Sources */,
 				023433671B8D588D009307CB /* AppDelegate.swift in Sources */,
 				0234336A1B8D588D009307CB /* WatchStudyNotes.xcdatamodeld in Sources */,
+				027783F41B8E755D00311AA1 /* HomeViewController.swift in Sources */,
 				027783EE1B8E70A400311AA1 /* Enum.swift in Sources */,
+				027783F71B8E7B7C00311AA1 /* Note.swift in Sources */,
 				027783F01B8E70BB00311AA1 /* Config.swift in Sources */,
 				02D8E08E1B8E6A26005CB348 /* BaseViewController.swift in Sources */,
 				027783E71B8E6AF700311AA1 /* Constant.swift in Sources */,

@@ -69,7 +69,7 @@ class BaseViewController: UIViewController, ApiDelegate, UIGestureRecognizerDele
     }
     
     func getResumeToPage()-> ResumeToPage {
-        return ResumeToPage(rawValue: Util.stringUserDefault(UserDefaultKey.ResumeToPage, ifNilThenReturn: ResumeToPage.LaunchPadLanding.rawValue))!
+        return ResumeToPage(rawValue: Util.stringUserDefault(UserDefaultKey.ResumeToPage, ifNilThenReturn: ResumeToPage.Home.rawValue))!
     }
     
     func presentStoryboard(storyboardName: String, animated: Bool) {
@@ -146,24 +146,6 @@ class BaseViewController: UIViewController, ApiDelegate, UIGestureRecognizerDele
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
         super.motionEnded(motion, withEvent: event)
-        
-        let alert = UIAlertController(title: "DEBUG HELPERS", message: "Use them with CAUTIONS?", preferredStyle: UIAlertControllerStyle.Alert)
-        let resetWallioButton = UIAlertAction(title: "Reset Wallio App", style: UIAlertActionStyle.Destructive) {(_) in
-            // remove all user defaults
-            let appDomain = NSBundle.mainBundle().bundleIdentifier
-            NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain!)
-            
-            self.presentStoryboard("Entry", animated: true)
-        }
-        let resetWeeklyCheckUp = UIAlertAction(title: "Reset Weekly Check Up Done Flag", style: UIAlertActionStyle.Destructive) {(_) in
-            Util.clearUserDefault(UserDefaultKey.LastWeeklyCheckUpTimestamp)
-        }
-        let cancelButton = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {(_) in
-        }
-        alert.addAction(resetWallioButton)
-        alert.addAction(resetWeeklyCheckUp)
-        alert.addAction(cancelButton)
-        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func showMessageBox(title: String, message: String, buttonTitle: String, handler: (UIAlertAction!) -> Void) {

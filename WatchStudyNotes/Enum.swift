@@ -134,24 +134,11 @@ enum APIRouter: URLRequestConvertible {
     }
 }
 
-enum TransactionCadence: Int {
-    case Weekly = 1
-    case EveryTwoWeeks = 2
-    case Monthly = 3
-    case SemiMonthly = 4
-    case Annually = 5
-    case EveryTwoMonth = 6
-    case EveryThreeMonth = 7
-    case SemiAnnually = 8
-    
-    static let allValues = ["Every Week", "Every 2 Weeks", "Every Month", "Every ½ Month", "Every Year", "Every 2 Months", "Every 3 Months", "Every ½ Year"]
-}
-
 enum UserDefaultKey: String {
     case Username = "username"
     case ResumeToPage = "ResumeToPage"
-    case NewbieSeletedPopularExpenses = "NewbieSeletedPopularExpenses"
-    case LastWeeklyCheckUpTimestamp = "LastWeeklyCheckUpTimestamp"
+    case NoteItems = "NoteItems"
+    case FrequenceInMinutes = "FrequenceInMinutes"
 }
 
 enum KeychainKey: String {
@@ -160,44 +147,5 @@ enum KeychainKey: String {
 }
 
 enum ResumeToPage: String {
-    case LaunchPadLanding = "LaunchPadLanding"
     case Home = "Home"
-    case IncomeAdd = "IncomeAdd"
-    case IncomeSummary = "IncomeSummary"
-    case ExpensePopular = "ExpensePopular"
-    case ExpenseAdd = "ExpenseAdd"
-    case ExpenseSummary = "ExpenseSummary"
-    case DailyDisposable = "DailyDisposable"
-    case BankAccountSearch = "BankAccountSearch"
-    case BankAccountSummary = "BankAccountSummary"
-    case CreditCardSearch = "CreditCardSearch"
-    case CreditCardSummary = "CreditCardSummary"
-    case AccountBalance = "AccountBalance"
-    case EmergencyFundExplained = "EmergencyFundExplained"
-    case GoalSetting = "GoalSetting"
-    case FinancialSummary = "FinancialSummary"
-    case Registration = "Registration"
-}
-
-enum PopularExpenses: String {
-    case Mortgage = "Mortgage"
-    case Rent = "Rent"
-    case CarPayment = "Car Payment"
-    case CarInsurance = "Car Insurance"
-    case Electricity = "Electricity"
-    case Water = "Water"
-    case Garbage = "Garbage"
-    case Cable = "Cable"
-    case Internet = "Internet"
-    case Phone = "Phone"
-    case Tuition = "Tuition"
-    case Gym = "Gym"
-    case ChildCare = "Child Care"
-    case Landscaping = "Landscaping"
-    case HouseCleaning = "House Cleaning"
-}
-
-enum GoalKind: Int {
-    case DebtRepayment = 1
-    case Saving = 2
 }

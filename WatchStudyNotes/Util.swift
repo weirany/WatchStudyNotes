@@ -116,6 +116,10 @@ class Util {
         let components = cal.components(unit, fromDate: startDate, toDate: endDate, options: nil)
         return components.day
     }
+    
+    class func randInRange(lower: Int, upperExclude: Int) -> Int {
+        return lower + Int(arc4random_uniform(UInt32(upperExclude - lower)))
+    }
 }
 
 // refer to: http://stackoverflow.com/a/9274863/346676
