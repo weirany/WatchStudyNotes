@@ -13,13 +13,6 @@
 		023433711B8D588D009307CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023433701B8D588D009307CB /* Images.xcassets */; };
 		023433741B8D588D009307CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023433721B8D588D009307CB /* LaunchScreen.xib */; };
 		023433801B8D588D009307CB /* WatchStudyNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234337F1B8D588D009307CB /* WatchStudyNotesTests.swift */; };
-		0253D1041B8D8E340009A8D1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253D1031B8D8E340009A8D1 /* InterfaceController.swift */; };
-		0253D1061B8D8E340009A8D1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253D1051B8D8E340009A8D1 /* NotificationController.swift */; };
-		0253D1081B8D8E340009A8D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0253D1071B8D8E340009A8D1 /* Images.xcassets */; };
-		0253D10C1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 0253D10B1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App.app */; };
-		0253D1141B8D8E340009A8D1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0253D1121B8D8E340009A8D1 /* Interface.storyboard */; };
-		0253D1161B8D8E340009A8D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0253D1151B8D8E340009A8D1 /* Images.xcassets */; };
-		0253D1191B8D8E350009A8D1 /* WatchStudyNotes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0253D0FE1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		027783E71B8E6AF700311AA1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783E61B8E6AF700311AA1 /* Constant.swift */; };
 		027783EA1B8E703600311AA1 /* ApiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783E91B8E703600311AA1 /* ApiDelegate.swift */; };
 		027783EC1B8E704D00311AA1 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783EB1B8E704D00311AA1 /* Api.swift */; };
@@ -28,6 +21,14 @@
 		027783F21B8E70E900311AA1 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783F11B8E70E900311AA1 /* Util.swift */; };
 		027783F41B8E755D00311AA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783F31B8E755D00311AA1 /* HomeViewController.swift */; };
 		027783F71B8E7B7C00311AA1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027783F61B8E7B7C00311AA1 /* Note.swift */; };
+		027784281B91A26500311AA1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027784271B91A26500311AA1 /* InterfaceController.swift */; };
+		0277842A1B91A26500311AA1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027784291B91A26500311AA1 /* NotificationController.swift */; };
+		0277842C1B91A26500311AA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0277842B1B91A26500311AA1 /* Images.xcassets */; };
+		027784301B91A26500311AA1 /* WatchStudyNotes WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 0277842F1B91A26500311AA1 /* WatchStudyNotes WatchKit App.app */; };
+		027784381B91A26500311AA1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027784361B91A26500311AA1 /* Interface.storyboard */; };
+		0277843A1B91A26500311AA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027784391B91A26500311AA1 /* Images.xcassets */; };
+		0277843D1B91A26500311AA1 /* WatchStudyNotes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 027784221B91A26500311AA1 /* WatchStudyNotes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		027A3C221B91A9C5006E9C83 /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 027A3C211B91A9C5006E9C83 /* todo.txt */; };
 		02D8E08E1B8E6A26005CB348 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8E08D1B8E6A26005CB348 /* BaseViewController.swift */; };
 		41F11D79B9A04A8D8080D95F /* Pods_WatchStudyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B802AEE0D62C9B19CEFE032 /* Pods_WatchStudyNotes.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -40,18 +41,18 @@
 			remoteGlobalIDString = 023433601B8D588D009307CB;
 			remoteInfo = WatchStudyNotes;
 		};
-		0253D10D1B8D8E340009A8D1 /* PBXContainerItemProxy */ = {
+		027784311B91A26500311AA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 023433591B8D588D009307CB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0253D10A1B8D8E340009A8D1;
+			remoteGlobalIDString = 0277842E1B91A26500311AA1;
 			remoteInfo = "WatchStudyNotes WatchKit App";
 		};
-		0253D1171B8D8E350009A8D1 /* PBXContainerItemProxy */ = {
+		0277843B1B91A26500311AA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 023433591B8D588D009307CB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0253D0FD1B8D8E340009A8D1;
+			remoteGlobalIDString = 027784211B91A26500311AA1;
 			remoteInfo = "WatchStudyNotes WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
@@ -63,7 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0253D1191B8D8E350009A8D1 /* WatchStudyNotes WatchKit Extension.appex in Embed App Extensions */,
+				0277843D1B91A26500311AA1 /* WatchStudyNotes WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,16 +82,6 @@
 		023433791B8D588D009307CB /* WatchStudyNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchStudyNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0234337E1B8D588D009307CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0234337F1B8D588D009307CB /* WatchStudyNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStudyNotesTests.swift; sourceTree = "<group>"; };
-		0253D0FE1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchStudyNotes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0253D1011B8D8E340009A8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0253D1021B8D8E340009A8D1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		0253D1031B8D8E340009A8D1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		0253D1051B8D8E340009A8D1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		0253D1071B8D8E340009A8D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0253D10B1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchStudyNotes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0253D1111B8D8E340009A8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0253D1131B8D8E340009A8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		0253D1151B8D8E340009A8D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		027783E61B8E6AF700311AA1 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		027783E91B8E703600311AA1 /* ApiDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDelegate.swift; sourceTree = "<group>"; };
 		027783EB1B8E704D00311AA1 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -99,6 +90,17 @@
 		027783F11B8E70E900311AA1 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		027783F31B8E755D00311AA1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		027783F61B8E7B7C00311AA1 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		027784221B91A26500311AA1 /* WatchStudyNotes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchStudyNotes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		027784251B91A26500311AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027784261B91A26500311AA1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		027784271B91A26500311AA1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		027784291B91A26500311AA1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0277842B1B91A26500311AA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0277842F1B91A26500311AA1 /* WatchStudyNotes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchStudyNotes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		027784351B91A26500311AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027784371B91A26500311AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		027784391B91A26500311AA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		027A3C211B91A9C5006E9C83 /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
 		02D8E08D1B8E6A26005CB348 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0E7D0B3A3F11608D60CE28AE /* Pods-WatchStudyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStudyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchStudyNotes/Pods-WatchStudyNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		1587B4562FBD003EECC9431A /* Pods-WatchStudyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStudyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchStudyNotes/Pods-WatchStudyNotes.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +123,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0253D0FB1B8D8E340009A8D1 /* Frameworks */ = {
+		0277841F1B91A26500311AA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,8 +138,8 @@
 			children = (
 				023433631B8D588D009307CB /* WatchStudyNotes */,
 				0234337C1B8D588D009307CB /* WatchStudyNotesTests */,
-				0253D0FF1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension */,
-				0253D10F1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App */,
+				027784231B91A26500311AA1 /* WatchStudyNotes WatchKit Extension */,
+				027784331B91A26500311AA1 /* WatchStudyNotes WatchKit App */,
 				023433621B8D588D009307CB /* Products */,
 				39E4126B68A44A9970388363 /* Pods */,
 				6C9072709A98BCE0EC78E27A /* Frameworks */,
@@ -149,8 +151,8 @@
 			children = (
 				023433611B8D588D009307CB /* WatchStudyNotes.app */,
 				023433791B8D588D009307CB /* WatchStudyNotesTests.xctest */,
-				0253D0FE1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension.appex */,
-				0253D10B1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App.app */,
+				027784221B91A26500311AA1 /* WatchStudyNotes WatchKit Extension.appex */,
+				0277842F1B91A26500311AA1 /* WatchStudyNotes WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +169,7 @@
 				023433721B8D588D009307CB /* LaunchScreen.xib */,
 				023433681B8D588D009307CB /* WatchStudyNotes.xcdatamodeld */,
 				023433641B8D588D009307CB /* Supporting Files */,
+				027A3C211B91A9C5006E9C83 /* todo.txt */,
 			);
 			path = WatchStudyNotes;
 			sourceTree = "<group>";
@@ -196,44 +199,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0253D0FF1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				0253D1031B8D8E340009A8D1 /* InterfaceController.swift */,
-				0253D1051B8D8E340009A8D1 /* NotificationController.swift */,
-				0253D1071B8D8E340009A8D1 /* Images.xcassets */,
-				0253D1001B8D8E340009A8D1 /* Supporting Files */,
-			);
-			path = "WatchStudyNotes WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		0253D1001B8D8E340009A8D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0253D1011B8D8E340009A8D1 /* Info.plist */,
-				0253D1021B8D8E340009A8D1 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0253D10F1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				0253D1121B8D8E340009A8D1 /* Interface.storyboard */,
-				0253D1151B8D8E340009A8D1 /* Images.xcassets */,
-				0253D1101B8D8E340009A8D1 /* Supporting Files */,
-			);
-			path = "WatchStudyNotes WatchKit App";
-			sourceTree = "<group>";
-		};
-		0253D1101B8D8E340009A8D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0253D1111B8D8E340009A8D1 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		027783E51B8E6ACC00311AA1 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +219,44 @@
 				027783F61B8E7B7C00311AA1 /* Note.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		027784231B91A26500311AA1 /* WatchStudyNotes WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				027784271B91A26500311AA1 /* InterfaceController.swift */,
+				027784291B91A26500311AA1 /* NotificationController.swift */,
+				0277842B1B91A26500311AA1 /* Images.xcassets */,
+				027784241B91A26500311AA1 /* Supporting Files */,
+			);
+			path = "WatchStudyNotes WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		027784241B91A26500311AA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				027784251B91A26500311AA1 /* Info.plist */,
+				027784261B91A26500311AA1 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		027784331B91A26500311AA1 /* WatchStudyNotes WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				027784361B91A26500311AA1 /* Interface.storyboard */,
+				027784391B91A26500311AA1 /* Images.xcassets */,
+				027784341B91A26500311AA1 /* Supporting Files */,
+			);
+			path = "WatchStudyNotes WatchKit App";
+			sourceTree = "<group>";
+		};
+		027784341B91A26500311AA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				027784351B91A26500311AA1 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		02D8E08C1B8E69F2005CB348 /* Controllers */ = {
@@ -299,7 +302,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0253D1181B8D8E350009A8D1 /* PBXTargetDependency */,
+				0277843C1B91A26500311AA1 /* PBXTargetDependency */,
 			);
 			name = WatchStudyNotes;
 			productName = WatchStudyNotes;
@@ -324,29 +327,29 @@
 			productReference = 023433791B8D588D009307CB /* WatchStudyNotesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0253D0FD1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension */ = {
+		027784211B91A26500311AA1 /* WatchStudyNotes WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0253D11F1B8D8E350009A8D1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit Extension" */;
+			buildConfigurationList = 027784411B91A26500311AA1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit Extension" */;
 			buildPhases = (
-				0253D0FA1B8D8E340009A8D1 /* Sources */,
-				0253D0FB1B8D8E340009A8D1 /* Frameworks */,
-				0253D0FC1B8D8E340009A8D1 /* Resources */,
+				0277841E1B91A26500311AA1 /* Sources */,
+				0277841F1B91A26500311AA1 /* Frameworks */,
+				027784201B91A26500311AA1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0253D10E1B8D8E340009A8D1 /* PBXTargetDependency */,
+				027784321B91A26500311AA1 /* PBXTargetDependency */,
 			);
 			name = "WatchStudyNotes WatchKit Extension";
 			productName = "WatchStudyNotes WatchKit Extension";
-			productReference = 0253D0FE1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension.appex */;
+			productReference = 027784221B91A26500311AA1 /* WatchStudyNotes WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit-extension";
 		};
-		0253D10A1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App */ = {
+		0277842E1B91A26500311AA1 /* WatchStudyNotes WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0253D11E1B8D8E350009A8D1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit App" */;
+			buildConfigurationList = 0277843E1B91A26500311AA1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit App" */;
 			buildPhases = (
-				0253D1091B8D8E340009A8D1 /* Resources */,
+				0277842D1B91A26500311AA1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -354,7 +357,7 @@
 			);
 			name = "WatchStudyNotes WatchKit App";
 			productName = "WatchStudyNotes WatchKit App";
-			productReference = 0253D10B1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App.app */;
+			productReference = 0277842F1B91A26500311AA1 /* WatchStudyNotes WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp";
 		};
 /* End PBXNativeTarget section */
@@ -379,10 +382,11 @@
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 023433601B8D588D009307CB;
 					};
-					0253D0FD1B8D8E340009A8D1 = {
+					027784211B91A26500311AA1 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = SU48UGSAPP;
 					};
-					0253D10A1B8D8E340009A8D1 = {
+					0277842E1B91A26500311AA1 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -402,8 +406,8 @@
 			targets = (
 				023433601B8D588D009307CB /* WatchStudyNotes */,
 				023433781B8D588D009307CB /* WatchStudyNotesTests */,
-				0253D0FD1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension */,
-				0253D10A1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App */,
+				027784211B91A26500311AA1 /* WatchStudyNotes WatchKit Extension */,
+				0277842E1B91A26500311AA1 /* WatchStudyNotes WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -413,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027A3C221B91A9C5006E9C83 /* todo.txt in Resources */,
 				0234336F1B8D588D009307CB /* Main.storyboard in Resources */,
 				023433741B8D588D009307CB /* LaunchScreen.xib in Resources */,
 				023433711B8D588D009307CB /* Images.xcassets in Resources */,
@@ -426,21 +431,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0253D0FC1B8D8E340009A8D1 /* Resources */ = {
+		027784201B91A26500311AA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0253D10C1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App.app in Resources */,
-				0253D1081B8D8E340009A8D1 /* Images.xcassets in Resources */,
+				027784301B91A26500311AA1 /* WatchStudyNotes WatchKit App.app in Resources */,
+				0277842C1B91A26500311AA1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0253D1091B8D8E340009A8D1 /* Resources */ = {
+		0277842D1B91A26500311AA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0253D1141B8D8E340009A8D1 /* Interface.storyboard in Resources */,
-				0253D1161B8D8E340009A8D1 /* Images.xcassets in Resources */,
+				027784381B91A26500311AA1 /* Interface.storyboard in Resources */,
+				0277843A1B91A26500311AA1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,12 +526,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0253D0FA1B8D8E340009A8D1 /* Sources */ = {
+		0277841E1B91A26500311AA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0253D1061B8D8E340009A8D1 /* NotificationController.swift in Sources */,
-				0253D1041B8D8E340009A8D1 /* InterfaceController.swift in Sources */,
+				0277842A1B91A26500311AA1 /* NotificationController.swift in Sources */,
+				027784281B91A26500311AA1 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,15 +543,15 @@
 			target = 023433601B8D588D009307CB /* WatchStudyNotes */;
 			targetProxy = 0234337A1B8D588D009307CB /* PBXContainerItemProxy */;
 		};
-		0253D10E1B8D8E340009A8D1 /* PBXTargetDependency */ = {
+		027784321B91A26500311AA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0253D10A1B8D8E340009A8D1 /* WatchStudyNotes WatchKit App */;
-			targetProxy = 0253D10D1B8D8E340009A8D1 /* PBXContainerItemProxy */;
+			target = 0277842E1B91A26500311AA1 /* WatchStudyNotes WatchKit App */;
+			targetProxy = 027784311B91A26500311AA1 /* PBXContainerItemProxy */;
 		};
-		0253D1181B8D8E350009A8D1 /* PBXTargetDependency */ = {
+		0277843C1B91A26500311AA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0253D0FD1B8D8E340009A8D1 /* WatchStudyNotes WatchKit Extension */;
-			targetProxy = 0253D1171B8D8E350009A8D1 /* PBXContainerItemProxy */;
+			target = 027784211B91A26500311AA1 /* WatchStudyNotes WatchKit Extension */;
+			targetProxy = 0277843B1B91A26500311AA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -567,10 +572,10 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		0253D1121B8D8E340009A8D1 /* Interface.storyboard */ = {
+		027784361B91A26500311AA1 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0253D1131B8D8E340009A8D1 /* Base */,
+				027784371B91A26500311AA1 /* Base */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -721,59 +726,61 @@
 			};
 			name = Release;
 		};
-		0253D11A1B8D8E350009A8D1 /* Debug */ = {
+		0277843F1B91A26500311AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "WatchStudyNotes WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				IBSC_MODULE = WatchStudyNotes_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchStudyNotes WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
 			};
 			name = Debug;
 		};
-		0253D11B1B8D8E350009A8D1 /* Release */ = {
+		027784401B91A26500311AA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "WatchStudyNotes WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchStudyNotes_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchStudyNotes WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
 			};
 			name = Release;
 		};
-		0253D11C1B8D8E350009A8D1 /* Debug */ = {
+		027784421B91A26500311AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				IBSC_MODULE = WatchStudyNotes_WatchKit_Extension;
-				INFOPLIST_FILE = "WatchStudyNotes WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "WatchStudyNotes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
 			};
 			name = Debug;
 		};
-		0253D11D1B8D8E350009A8D1 /* Release */ = {
+		027784431B91A26500311AA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IBSC_MODULE = WatchStudyNotes_WatchKit_Extension;
-				INFOPLIST_FILE = "WatchStudyNotes WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WatchStudyNotes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
 			};
 			name = Release;
 		};
@@ -807,20 +814,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0253D11E1B8D8E350009A8D1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit App" */ = {
+		0277843E1B91A26500311AA1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0253D11C1B8D8E350009A8D1 /* Debug */,
-				0253D11D1B8D8E350009A8D1 /* Release */,
+				0277843F1B91A26500311AA1 /* Debug */,
+				027784401B91A26500311AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0253D11F1B8D8E350009A8D1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit Extension" */ = {
+		027784411B91A26500311AA1 /* Build configuration list for PBXNativeTarget "WatchStudyNotes WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0253D11A1B8D8E350009A8D1 /* Debug */,
-				0253D11B1B8D8E350009A8D1 /* Release */,
+				027784421B91A26500311AA1 /* Debug */,
+				027784431B91A26500311AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

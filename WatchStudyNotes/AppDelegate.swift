@@ -18,20 +18,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // logging
         log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: .Debug)
 
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
+        // notifications
+        let oneMonthOption = UIMutableUserNotificationAction()
+        oneMonthOption.identifier = "ONE_MONTH"
+        oneMonthOption.title = "Hide for 1 month"
+        oneMonthOption.activationMode = .Background
+        oneMonthOption.authenticationRequired = false
+        let oneYearOption = UIMutableUserNotificationAction()
+        oneYearOption.identifier = "ONE_YEAR"
+        oneYearOption.title = "Hide for 1 year"
+        oneYearOption.activationMode = .Background
+        oneYearOption.authenticationRequired = false
+        let oneThousandYearsOption = UIMutableUserNotificationAction()
+        oneThousandYearsOption.identifier = "ONE_THOUSAND_YEARS"
+        oneThousandYearsOption.title = "Hide for 1000 years"
+        oneThousandYearsOption.activationMode = .Background
+        oneThousandYearsOption.authenticationRequired = false
+        let myCategory = UIMutableUserNotificationCategory()
+        myCategory.identifier = "myCategory"
+        myCategory.setActions([oneMonthOption, oneYearOption, oneThousandYearsOption], forContext: .Default)
+        myCategory.setActions([oneThousandYearsOption, oneMonthOption], forContext: .Minimal)
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: NSSet(array: [myCategory]) as Set<NSObject>))
+        
+        // background fetch
         UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
         
         return true
     }
     
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        switch (identifier!) {
+        case "ONE_MONTH":
+            NoteList.sharedInstance.hideNote(notification.userInfo!["UUID"] as! String, forNumOfDays: 30)
+        case "ONE_YEAR":
+            NoteList.sharedInstance.hideNote(notification.userInfo!["UUID"] as! String, forNumOfDays: 365)
+        case "ONE_THOUSAND_YEARS":
+            NoteList.sharedInstance.hideNote(notification.userInfo!["UUID"] as! String, forNumOfDays: 365000)
+        default:
+            log.error("Error: unexpected notification action identifier!")
+        }
+        Util.updateSchedule()
+        completionHandler()
+    }
+    
     // Support for background fetch
     func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        if let homeVC = window?.rootViewController as? HomeViewController {
-            homeVC.updateSchedule()
-            completionHandler(.NewData)
-        }
+        Util.updateSchedule()
+        completionHandler(.NewData)
     }
 
     func applicationWillResignActive(application: UIApplication) {

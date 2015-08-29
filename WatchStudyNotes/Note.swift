@@ -56,6 +56,21 @@ class NoteList {
         NSUserDefaults.standardUserDefaults().setObject(noteDict, forKey: UserDefaultKey.NoteItems.rawValue)
     }
     
+    func hideNote(noteId: String, forNumOfDays: Int) {
+        var noteDict = NSUserDefaults.standardUserDefaults().dictionaryForKey(UserDefaultKey.NoteItems.rawValue) ?? Dictionary()
+        if var item: AnyObject = noteDict[noteId] {
+            noteDict[noteId] = [
+                "id": item["id"] as! String,
+                "text": item["text"] as! String,
+                "hideUntil": forNumOfDays.days.fromNow!,
+                "isDeleted": item["isDeleted"] as! Bool,
+                "createdDate": item["createdDate"] as! NSDate,
+                "lastModifiedDate": NSDate()
+            ]
+        }
+        NSUserDefaults.standardUserDefaults().setObject(noteDict, forKey: UserDefaultKey.NoteItems.rawValue)
+    }
+    
     func allAvailableItems() -> [NoteItem] {
         var noteDict = NSUserDefaults.standardUserDefaults().dictionaryForKey(UserDefaultKey.NoteItems.rawValue) ?? [:]
         let items = Array(noteDict.values)

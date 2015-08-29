@@ -30,7 +30,7 @@ class HomeViewController: BaseViewController {
         frequenceText.layer.borderWidth = 1.0;
         frequenceText.layer.cornerRadius = 8;
         
-        updateSchedule()
+        Util.updateSchedule()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +42,7 @@ class HomeViewController: BaseViewController {
             text = text.strip()
             let newNote = NoteItem(text: text)
             NoteList.sharedInstance.addItem(newNote)
-            updateSchedule()
+            Util.updateSchedule()
             
             // clear up
             newNoteText.text = ""
@@ -52,29 +52,6 @@ class HomeViewController: BaseViewController {
     
     @IBAction func clearClicked(sender: AnyObject) {
         newNoteText.text = ""
-    }
-    
-    func updateSchedule() {
-        // remove all scheduled notifications
-        UIApplication.sharedApplication().scheduledLocalNotifications.removeAll(keepCapacity: true)
-        var items = NoteList.sharedInstance.allAvailableItems()
-        if items.count == 0 { return }
-        let frequencInMinutes = Util.stringUserDefault(UserDefaultKey.FrequenceInMinutes)!.toInt()!
-        for i in 1...Constants.MaxLocalNotifications {
-            let randomIndex = Util.randInRange(0, upperExclude: items.count)
-            addNotification(items[randomIndex], minutesFromNow: frequencInMinutes * i)
-        }
-    }
-    
-    func addNotification(item: NoteItem, minutesFromNow: Int) {
-        var notification = UILocalNotification()
-        notification.alertBody = item.text
-        notification.alertAction = "read"
-        notification.fireDate = minutesFromNow.minute.fromNow
-        notification.soundName = UILocalNotificationDefaultSoundName
-        notification.userInfo = ["UUID": item.id, ]
-        notification.category = "myCategory"
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
     @IBAction func frequenceChanged(sender: AnyObject) {
@@ -91,6 +68,6 @@ class HomeViewController: BaseViewController {
     
     func updateFrequence(newFrequenceInMinutes: Int) {
         Util.setUserDefault(UserDefaultKey.FrequenceInMinutes, value: String(newFrequenceInMinutes))
-        updateSchedule()
+        Util.updateSchedule()
     }
 }

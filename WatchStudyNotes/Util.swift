@@ -120,6 +120,29 @@ class Util {
     class func randInRange(lower: Int, upperExclude: Int) -> Int {
         return lower + Int(arc4random_uniform(UInt32(upperExclude - lower)))
     }
+    
+    class func updateSchedule() {
+        // remove all scheduled notifications
+        UIApplication.sharedApplication().scheduledLocalNotifications.removeAll(keepCapacity: true)
+        var items = NoteList.sharedInstance.allAvailableItems()
+        if items.count == 0 { return }
+        let frequencInMinutes = Util.stringUserDefault(UserDefaultKey.FrequenceInMinutes)!.toInt()!
+        for i in 1...Constants.MaxLocalNotifications {
+            let randomIndex = Util.randInRange(0, upperExclude: items.count)
+            addNotification(items[randomIndex], minutesFromNow: frequencInMinutes * i)
+        }
+    }
+    
+    class func addNotification(item: NoteItem, minutesFromNow: Int) {
+        var notification = UILocalNotification()
+        notification.alertBody = item.text
+        notification.alertAction = "read"
+        notification.fireDate = minutesFromNow.minute.fromNow
+        notification.soundName = UILocalNotificationDefaultSoundName
+        notification.userInfo = ["UUID": item.id, ]
+        notification.category = "myCategory"
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
 }
 
 // refer to: http://stackoverflow.com/a/9274863/346676

@@ -2,7 +2,7 @@
 //  InterfaceController.swift
 //  WatchStudyNotes WatchKit Extension
 //
-//  Created by Weiran Ye on 8/25/15.
+//  Created by Weiran Ye on 8/29/15.
 //  Copyright (c) 2015 Weiran Ye. All rights reserved.
 //
 
