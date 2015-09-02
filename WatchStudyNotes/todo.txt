@@ -1,4 +1,3 @@
-- app icon
-- app name on phone screen and watch title
+- watch main app UI
 - see how it works on smaller watch?
 - hard code same size for the input text box?
