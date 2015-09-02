@@ -32,7 +32,14 @@ class NotificationController: WKUserNotificationInterfaceController {
     }
 
     override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
-        noteLabel.setText(localNotification.alertBody)
+        let text = localNotification.alertBody!
+        let numOfChar = count(text)
+        // this is the formular to get the best scale.
+        let fontSize = numOfChar < 10 ? 32 : CGFloat(32 / log10(Double(numOfChar)))
+        let adaptiveFont = UIFont.systemFontOfSize(fontSize)
+        var fontAttrs = [NSFontAttributeName : adaptiveFont]
+        var attrString = NSAttributedString(string: text, attributes: fontAttrs)
+        noteLabel.setAttributedText(attrString)
         completionHandler(.Custom)
     }
     

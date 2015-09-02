@@ -33,8 +33,9 @@
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchStudyNotes_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="145.5" alignment="center" verticalAlignment="center" text="Label" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="s7g-BL-Ukk">
-                            <fontDescription key="font" type="system" pointSize="10"/>
+                        <label alignment="center" verticalAlignment="center" text="alert message" numberOfLines="0" id="s7g-BL-Ukk">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
                         </label>
                     </items>
                     <connections>
@@ -42,7 +43,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="676"/>
+            <point key="canvasLocation" x="467" y="661.75"/>
         </scene>
     </scenes>
 </document>
