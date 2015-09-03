@@ -23,13 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // notifications
         let oneMonthOption = UIMutableUserNotificationAction()
-        oneMonthOption.identifier = "ONE_MONTH"
-        oneMonthOption.title = "Hide for 1 month"
+        oneMonthOption.identifier = "ONE_WEEK"
+        oneMonthOption.title = "Hide for 1 week"
         oneMonthOption.activationMode = .Background
         oneMonthOption.authenticationRequired = false
         let oneYearOption = UIMutableUserNotificationAction()
-        oneYearOption.identifier = "ONE_YEAR"
-        oneYearOption.title = "Hide for 1 year"
+        oneYearOption.identifier = "ONE_MONTH"
+        oneYearOption.title = "Hide for 1 month"
         oneYearOption.activationMode = .Background
         oneYearOption.authenticationRequired = false
         let oneThousandYearsOption = UIMutableUserNotificationAction()
@@ -51,10 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
         switch (identifier!) {
+        case "ONE_WEEK":
+            NoteList.sharedInstance.hideNote(notification.userInfo!["UUID"] as! String, forNumOfDays: 7)
         case "ONE_MONTH":
             NoteList.sharedInstance.hideNote(notification.userInfo!["UUID"] as! String, forNumOfDays: 30)
-        case "ONE_YEAR":
-            NoteList.sharedInstance.hideNote(notification.userInfo!["UUID"] as! String, forNumOfDays: 365)
         case "ONE_THOUSAND_YEARS":
             NoteList.sharedInstance.hideNote(notification.userInfo!["UUID"] as! String, forNumOfDays: 365000)
         default:
